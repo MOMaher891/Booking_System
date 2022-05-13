@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            background-image: url('Image/sliderBackground.jpg');
+            background-size: cover;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 70%;
+            height: 70%;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 20px;
+            opacity: 0.9;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            /* padding: 0px 20px; */
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 50%);
+        }
+
+        .swiper-slide button {
+            position: absolute;
+            bottom: 50px;
+        }
+
+        .swiper-slide button a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="overlay"></div>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+
+
+            <div class="swiper-slide">
+
+                <div class="text">
+                    <h1>Cardiology</h1>
+                    <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
+                </div>
+                <button class="btn btn-success  book"><a href="reservation/reserv.html">Book</a></button>
+            </div>
+            <div class="swiper-slide">
+
+                <div class="text">
+                    <h1>Cardiology</h1>
+                    <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
+                </div>
+                <button class="btn btn-success  book"><a href="reservation/reserv.html">Book</a></button>
+            </div>
+            <div class="swiper-slide">
+
+                <div class="text">
+                    <h1>Cardiology</h1>
+                    <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
+                </div>
+                <button class="btn btn-success  book"><a href="reservation/reserv.html">Book</a></button>
+            </div>
+            <div class="swiper-slide">
+
+                <div class="text">
+                    <h1>Cardiology</h1>
+                    <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
+                </div>
+                <button class="btn btn-success  book"><a href="reservation/reserv.html">Book</a></button>
+            </div>
+            <div class="swiper-slide">
+
+                <div class="text">
+                    <h1>Cardiology</h1>
+                    <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
+                </div>
+                <button class="btn btn-success  book"><a href="reservation/reserv.html">Book</a></button>
+            </div>
+            <div class="swiper-slide">
+
+                <div class="text">
+                    <h1>Cardiology</h1>
+                    <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
+                </div>
+                <button class="btn btn-success  book"><a href="reservation/reserv.html">Book</a></button>
+            </div>
+
+
+
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
